@@ -35,7 +35,7 @@ public class SQLTest {
         var verificationPage = loginPage.validLogin(authInfo);
         verificationPage.verificationPageVisibility();
         var verificationCode = SQLHelper.getVerificationCode();
-        verificationPage.validVerify(verificationCode.getCode());
+        verificationPage.validVerify(verificationCode);
     }
 
     @Test
